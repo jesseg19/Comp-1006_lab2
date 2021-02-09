@@ -5,9 +5,9 @@
 
   // Step 1: Write the SQL to update the row (replace null with the string)
   $sql = "UPDATE products SET
-  name = '{$_POST['name']}',
-  price = {$_POST['price']}
-WHERE id = {$_POST['id']}";
+    name = '{$_POST['name']}',
+    price = {$_POST['price']}
+  WHERE id = {$_POST['id']}";
   
   // Step 2: Query the database with our SQL
   $res = mysqli_query($conn, $sql);
